@@ -136,7 +136,7 @@ position:absolute;
 </style>
 <script>
   //based on a pen by @robinselmer
-var url = "https://api.minetools.eu/ping/emeraldsmp.serv.nu";
+var url = "https://api.minetools.eu/ping/EmeraldSMP.serv.gs";
  
 $.getJSON(url, function(r) {
     //data is the JSON string
@@ -158,7 +158,7 @@ var pl5 = '';
 
           $('#sv').html('<b>Server MOTD:</b> '+r.description.replace(/§(.+?)/gi, '')+'<br><b>Server Version:</b> '+r.version.name+'<br><b>Players Online:</b> ' + r.players.online+pl+pl2+pl3+pl4+pl5);
 setInterval(() => {
-  var url1 = "https://api.minetools.eu/ping/emeraldsmp.serv.nu";
+  var url1 = "https://api.minetools.eu/ping/emeraldsmp.serv.gs";
 
   $.getJSON(url1, function(b) {
   var al = '';
